@@ -1,5 +1,5 @@
 # DS Toolbox WK08
-
+# แก้โค้ดหน้าขาว : D:\wk08-main\dstoolbox-wk08\.venv\html\view-source_https___wichit2s.github.io__static_courses_dstoolbox_slides_wk08.html
 A modern web project for Data Science Toolbox Week 08.
 
 ## Project Structure
