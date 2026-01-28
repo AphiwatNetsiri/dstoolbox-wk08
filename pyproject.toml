@@ -1,6 +1,21 @@
 [project]
 name = "dstoolbox-wk08"
 version = "0.1.0"
+description = "Data Science Toolbox Week 8"
+requires-python = ">=3.10"
+dependencies = [
+    "pycaret",
+    "mcp",
+    "scikit-learn>=1.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "dstoolbox-wk08"
+version = "0.1.0"
+<<<<<<< HEAD
 description = "Scikit-learn classification experiment with diabetes dataset"
 requires-python = ">=3.8"
 dependencies = [
@@ -10,3 +25,11 @@ dependencies = [
 [build-system]
 requires = ["setuptools>=45", "wheel"]
 build-backend = "setuptools.build_meta"
+=======
+description = "Data Science Toolbox Week 8"
+requires-python = ">=3.10"
+dependencies = [
+    "pycaret",
+    "mcp",
+]
+>>>>>>> d9fd211 (Update wk08: fix blank slide + pycaret workflow + mcp server + README)
