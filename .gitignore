@@ -1,4 +1,5 @@
-/.venv/
+<<<<<<< HEAD
+.venv/
 __pycache__/
 *.pyc
 .DS_Store
@@ -6,4 +7,6 @@ __pycache__/
 node_modules/
 dist/
 build/
+=======
 uv.lock
+>>>>>>> d9fd211 (Update wk08: fix blank slide + pycaret workflow + mcp server + README)
