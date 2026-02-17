@@ -1,3 +1,61 @@
+# Week09 — myapp (Demo Profile Landing)
+
+This repository contains a small static profile landing page (demo/fake CV) built with TailwindCSS (CDN) and served with Nginx inside a Docker container.
+
+Purpose
+- Simple, modern, Gen Z-style profile landing page for Week09 Docker assignment.
+- Demonstrates responsive layout, animated background (CSS-only), and containerized static hosting.
+
+Files
+- `index.html` — complete single-file static site (Tailwind via CDN, CSS animations included).
+- `Dockerfile` — builds an image from `nginx:alpine` and copies `index.html` into the web root.
+- `docker-compose.yml` — optional compose file to run the site as service `myapp` mapped to host port 8080.
+
+Quick Preview
+- Open `index.html` directly in a browser for a local preview (requires network for Tailwind CDN).
+
+Build & Run (Docker)
+
+1) Build the Docker image (from project root):
+
+```bash
+docker build -t week09-myapp .
+```
+
+2) Run container directly:
+
+```bash
+docker run -d --name week09-myapp -p 8080:80 week09-myapp
+```
+
+3) Or use docker compose (recommended for quick start):
+
+```bash
+docker compose up -d
+```
+
+Then open: http://localhost:8080
+
+Notes & Tips
+- Tailwind is loaded via CDN inside `index.html`. You need internet access in the container/environment to fetch it.
+- To change the public port, edit `docker-compose.yml` or the `-p` flag when running `docker run`.
+- This is a static page — no backend required. All assets are inline/SVG; adding external assets requires copying them into the build context and updating the `Dockerfile`.
+
+Customize
+- Edit `index.html` to change name, copy, colors, or layout. The design uses utility classes from Tailwind and a small set of custom CSS inside a `<style>` block.
+
+Files (paths)
+- `index.html` — main page
+- `Dockerfile` — Docker image recipe
+- `docker-compose.yml` — compose convenience file
+
+License
+- Demo content for coursework. Use freely for the assignment.
+
+สรุปสั้น ๆ (ภาษาไทย)
+- สร้าง image: `docker build -t week09-myapp .`
+- รัน: `docker run -d --name week09-myapp -p 8080:80 week09-myapp`
+- หรือใช้ `docker compose up -d` แล้วเปิด `http://localhost:8080`
 <<<<<<< HEAD
 # DS Toolbox WK08
 # แก้โค้ดหน้าขาว : D:\wk08-main\dstoolbox-wk08\.venv\html\view-source_https___wichit2s.github.io__static_courses_dstoolbox_slides_wk08.html
